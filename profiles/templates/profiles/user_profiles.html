@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Profiles</title>
+</head>
+<body>
+    <ul>
+        {% for profile in profiles %}
+            <li>
+                <img src="{{ profile.user_image.url }}" alt="{{ profile.user_image.name }}">
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
